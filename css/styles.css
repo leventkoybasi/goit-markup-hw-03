@@ -21,7 +21,7 @@ body {
   background-color: #ffffff;
 }
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 /* Helper Class */
 .container {
