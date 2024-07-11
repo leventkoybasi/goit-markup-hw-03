@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,21 +18,21 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="./index.html"
-          >Web<span class="logo-section">Studio</span></a
-        >
-        <ul>
-          <li class="list">
-            <a class="list-item" href="./index.html">Studio</a>
-          </li>
-          <li class="list"><a class="list-item" href="">Portfolio</a></li>
-          <li class="list"><a class="list-item" href="">Contacts</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="navbar">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo-section">Studio</span></a
+          >
+          <ul class="header-list">
+            <li><a class="header-list-item" href="./index.html">Studio</a></li>
+            <li><a class="header-list-item" href="">Portfolio</a></li>
+            <li><a class="header-list-item" href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
       <address class="contact">
-        <ul>
+        <ul class="contact-list">
           <li>
             <a class="contact-item" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -49,145 +49,152 @@
 
     <main>
       <section class="section-solution">
-        <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="order-button" type="button">Order Service</button>
+        <div class="container">
+          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <button class="order-button" type="button">Order Service</button>
+        </div>
       </section>
-      <section>
-        <!-- <h2>Our Features</h2> -->
-        <ul class="features-list">
-          <li class="features-list-item">
-            <h3 class="features">Strategy</h3>
-            <p class="features-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="features-list-item">
-            <h3 class="features">Punctuality</h3>
-            <p class="features-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="features-list-item">
-            <h3 class="features">Diligence</h3>
-            <p class="features-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="features-list-item">
-            <h3 class="features">Technologies</h3>
-            <p class="features-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+      <section class="section-features">
+        <div class="container">
+          <h2 class="visually-hidden">Our Features</h2>
+          <ul class="features-list">
+            <li class="features-list-item">
+              <h3 class="features">Strategy</h3>
+              <p class="features-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features">Punctuality</h3>
+              <p class="features-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features">Diligence</h3>
+              <p class="features-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features">Technologies</h3>
+              <p class="features-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="our-team">
-        <h2 class="our-team-title">Our Team</h2>
-        <ul class="our-team-list">
-          <li class="our-team-list-item">
-            <img src="./images/img01.jpg" alt="profile-image01" width="264" />
-            <div class="our-team-text-box">
-              <h3 class="our-team-list-title">Mark Guerrero</h3>
-              <p class="our-team-text">Product Designer</p>
-            </div>
-          </li>
-          <li class="our-team-list-item">
-            <img src="./images/img02.jpg" alt="profile-image02" width="264" />
-            <div class="our-team-text-box">
-              <h3 class="our-team-list-title">Tom Ford</h3>
-              <p class="our-team-text">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="our-team-list-item">
-            <img src="./images/img03.jpg" alt="profile-image03" width="264" />
-            <div class="our-team-text-box">
-              <h3 class="our-team-list-title">Camila Garcia</h3>
-              <p class="our-team-text">Marketing</p>
-            </div>
-          </li>
-          <li class="our-team-list-item">
-            <img src="./images/img04.jpg" alt="profile-image04" width="264" />
-            <div class="our-team-text-box">
-              <h3 class="our-team-list-title">Daniel Wilson</h3>
-              <p class="our-team-text">UI Designer</p>
-            </div>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="our-team-title">Our Team</h2>
+          <ul class="our-tean-list">
+            <li class="our-team-list-item">
+              <img src="./images/img01.jpg" alt="profile-image01" width="264" />
+              <div class="our-team-name-title">
+                <h3 class="our-team-list-title">Mark Guerrero</h3>
+                <p class="our-team-text">Product Designer</p>
+              </div>
+            </li>
+
+            <li class="our-team-list-item">
+              <img src="./images/img02.jpg" alt="profile-image02" width="264" />
+              <div class="our-team-name-title">
+                <h3 class="our-team-list-title">Tom Ford</h3>
+                <p class="our-team-text">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="our-team-list-item">
+              <img src="./images/img03.jpg" alt="profile-image03" width="264" />
+              <div class="our-team-name-title">
+                <h3 class="our-team-list-title">Camila Garcia</h3>
+                <p class="our-team-text">Marketing</p>
+              </div>
+            </li>
+            <li class="our-team-list-item">
+              <img src="./images/img04.jpg" alt="profile-image04" width="264" />
+              <div class="our-team-name-title">
+                <h3 class="our-team-list-title">Daniel Wilson</h3>
+                <p class="our-team-text">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <div class="our-portfolio">
-          <h2 class="our-portfolio-main-title">Our Portfolio</h2>
+      <section class="our-portfolio-section">
+        <div class="container">
+          <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="our-portfolio-list">
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img05.jpg"
                 alt="banking-app-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Banking App</h3>
-                <p class="our-portfolio-subtext">App</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Banking App</h3>
+                <p class="our-portfolio-text">App</p>
               </div>
             </li>
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img06.jpg"
                 alt="cashless-payment-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Cashless Payment</h3>
-                <p class="our-portfolio-subtext">Marketing</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Cashless Payment</h3>
+                <p class="our-portfolio-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img07.jpg"
                 alt="meditation-app-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Meditation App</h3>
-                <p class="our-portfolio-subtext">App</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Meditation App</h3>
+                <p class="our-portfolio-text">App</p>
               </div>
             </li>
 
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img08.jpg"
                 alt="taxi-service-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Taxi Service</h3>
-                <p class="our-portfolio-subtext">Marketing</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Taxi Service</h3>
+                <p class="our-portfolio-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img09.jpg"
                 alt="screen-illustrations-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Screen Illustrations</h3>
-                <p class="our-portfolio-subtext">Design</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Screen Illustrations</h3>
+                <p class="our-portfolio-text">Design</p>
               </div>
             </li>
-            <li>
+            <li class="our-portfolio-list-item">
               <img
                 src="./images/img10.jpg"
                 alt="online-courses-image"
                 width="360"
               />
-              <div class="card-text">
-                <h3 class="our-portfolio-subtitle">Online Courses</h3>
-                <p class="our-portfolio-subtext">Marketing</p>
+              <div class="our-portfolio-name-category">
+                <h3 class="our-portfolio-title">Online Courses</h3>
+                <p class="our-portfolio-text">Marketing</p>
               </div>
             </li>
           </ul>
@@ -195,8 +202,8 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="site-footer-container">
-        <a class="logo" href="./index.html"
+      <div class="container">
+        <a class="footer-logo" href="./index.html"
           >Web<span class="logo-section">Studio</span></a
         >
         <p class="site-footer-text">
